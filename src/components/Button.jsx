@@ -1,7 +1,7 @@
 const Button = ({buttonClass,title,style,onClick,type,disabled})=>{
     return (
         <button 
-        className={`buttonClass ${buttonClass}`}
+        className={`buttonClass `}//${buttonClass}
         style={{...style,
             cursor:disabled ? 'not-allowed' : 'pointer',
         }}

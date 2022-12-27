@@ -13,16 +13,18 @@ const InputText = ({
     if (value && !error) return " inputText--valid";
   };
   return (
+    <>
     <div className={`inputText ${inputClass}${checkInputClass()}`}>
-      <lable htmlFor={name}>{lable}</lable>
+      <lable htmlFor={name}><strong>{lable}</strong></lable>
       <input
         name={name}
         placeholder={placeholder}
-        // value={value}
+        defaultValue={value}
         onChange={onChange}
       />
-      <p>{error}</p>
     </div>
+      <div className="error">{error}</div>
+    </>
   );
 };
 export default InputText;

@@ -5,50 +5,38 @@ export const STATUS = {
 };
 export const MODE = {
     SHOW_LIST : 'showList',
-    ADD_NEW : 'addNew'
+    ADD_NEW : 'addNew',
+    DETALL_TASK:'detailTask'
 }
-const descriptionData =' this is a tanks,this is a tanks,this is a tanks';
-export const TodoList = [
+export const ROUTE = {
+    ALL:'/',
+    NEW:"/new",
+    DOING:"/doing",
+    DONE:"/done",
+    ADDNEW:"/add-new",
+    DETAIL:"/detail",
+    DETAIL_TASK:"/detil/:idTask" ,
+    NOT_FOUND:"*"
+}
+
+
+export const SIDEBAR_ITEMS = [
     {
-        Title: 'Task 1',
-        Creator: 'QUOC',
-        Status:'NEW',
-        Description:descriptionData
+        url:"/",
+        title: "All Task"
     },
     {
-        Title: 'Task 2',
-        Creator: 'QUOC',
-        Status:'DOING',
-        Description:descriptionData
+        url:"/new",
+        title: "New Task"
     },
     {
-        Title: 'Task 3',
-        Creator: 'QUOC',
-        Status:'DONE',
-        Description:descriptionData
+        url:"/doing",
+        title: "Doing Task"
     },
     {
-        Title: 'Task 4',
-        Creator: 'QUOC',
-        Status:'NEW',
-        Description:descriptionData
-    },
-    {
-        Title: 'Task 5',
-        Creator: 'QUOC',
-        Status:'NEW',
-        Description:descriptionData
-    },
-    {
-        Title: 'Task 1',
-        Creator: 'QUOC',
-        Status:'NEW',
-        Description:descriptionData
-    },
-    {
-        Title: 'Task 6',
-        Creator: 'QUOC',
-        Status:'NEW',
-        Description:descriptionData
-    },       
+        url:"/done",
+        title: "Done Task"
+    }
 ]
+
+export const LIST_TO_DO_KEY = "l_t_d_k";

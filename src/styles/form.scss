@@ -42,15 +42,13 @@
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    margin-left: 20px;
     border: none;
     cursor: pointer;
 }
-.inputText > p {
-    position: absolute;
-    bottom: -18px;
-    left: 115px;
-    white-space: nowrap;
-    color: #f90c0c;
+.error {
+    color: red;
+    padding-left: 100px;
 }
 
 .inputText--error > label {
@@ -67,4 +65,43 @@
 .inputText--valid > input,
 .inputText--valid>input:focus-visible{
     border-color: #04be00;
+}
+
+.radioCheckboxClass {
+    width: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.radioCheckboxClass >input{
+    width: 50%;
+    height: 21px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+.radioCheckboxClass > label{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    margin-left: 35px;
+}
+.radioCheckboxClass > span{
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    border: 2px solid black;
+    border-radius: 50%;
+
+}
+.radioCheckboxClass:hover > input ~span{
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 5px 5px rgb(103, 91, 241,0.3);
+}
+.radioCheckboxClass>input:checked ~ span{
+    background-color: var(--primary);
+}
+.radioCheckboxClass > input:checked ~ label{
+    color: var(--primary);
 }
