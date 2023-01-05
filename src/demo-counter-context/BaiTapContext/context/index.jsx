@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import { localStoregeUlti } from "../../../functions/localStorage";
 
 const { get, set } = localStoregeUlti("todoInput", []);
-export const InputContext = createContext();
+export const InputContext = createContext();  
 
 export const InputProider = (props) => {
   const [keyword, setKeyword] = useState("");
@@ -19,11 +19,15 @@ export const InputProider = (props) => {
         setKeyword(e.target.value)
     },
     handleSubmit: () => {
-      setTodoItem((prev) => {
-        const newJob = [keyword,...prev];
-        set(newJob);
-        return newJob;
-      });
+      if(keyword === ""){
+        alert("vui long nhap ")
+      }else{
+        setTodoItem((prev) => {
+          const newJob = [keyword,...prev];
+          set(newJob);
+          return newJob;
+        });
+      }
       setKeyword("");
     },
   };

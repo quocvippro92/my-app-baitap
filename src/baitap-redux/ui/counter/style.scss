@@ -1,0 +1,29 @@
+.style-item {
+  display: flex;
+  background-color: aqua;
+  margin-top: 20px;
+  border-radius: 6px;
+  text-align: center;
+
+  p {
+    font-size: 30px;
+    width: 81%;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 40px;
+    text-align: -webkit-left;
+    justify-content: center;
+  }
+  .btn-delete {
+    width: 80px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #bbb;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}

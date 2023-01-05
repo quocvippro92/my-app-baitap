@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.redux-baitap{
+    
+        width: 500px;
+        margin: 50px auto;
+        text-align: center;
+        background-color: wheat;
+        border-radius: 10px;
+        padding: 4px;
+ 
+
+    input{
+        width: 400px;
+        height: 40px;
+        border-radius: 6px;
+        outline: none;
+        padding-left: 20px;
+        border: 1px solid black;
+    }
+    
+    .btn-body{
+        width: 80px;
+        height: 40px;   
+        margin-left: 10px;
+        border-radius: 6px;
+        outline: none;
+        border: 1px solid #bbb;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: aquamarine;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+    
+}

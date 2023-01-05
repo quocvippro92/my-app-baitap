@@ -1,8 +1,4 @@
-import { useContext, useEffect, useState } from "react";
-import { localStoregeUlti } from "../../../functions/localStorage";
-import Body from "../../../layout/Body";
-import { CounterContext } from "../../context";
-import BodyContext from "../Body/Body";
+import { useContext } from "react";
 import { InputContext } from "../context";
 
 
